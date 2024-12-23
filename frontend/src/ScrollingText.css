@@ -1,0 +1,32 @@
+.scrolling-text-container {
+    background-color: #f1c27d;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid #222;
+    color: #fff;
+    padding: 10px 0;
+    white-space: nowrap; /* Prevent wrapping of text */
+  }
+  
+  .scrolling-text {
+    display: inline-block;
+    animation: scrollText 10s linear infinite;
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .scrolling-text span {
+    display: inline-block;
+    margin-right: 50px; /* Space between repetitions */
+  }
+  
